@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <!-- Student Portal -->
+    <head id="header">
+        <div id="portal">Student Portal</div>
+    </head>
+
+    <!-- Search -->
+    <div id="search">
+        <input id="searchString" type="text" placeholder="Search">
+        <button class="black-button" onclick="searchStudents()">Search</button>
+    </div>
+
+    <!-- Sort -->
+    <div id="container">
+        <button class="black-button" onclick="sortAZ()">Sort A->Z</button>
+        <button class="black-button" onclick="sortZA()">Sort Z->A</button>
+        <button class="black-button" onclick="sortMarks()">Sort By Marks</button>
+        <button class="black-button" onclick="sortPass()">Sort By Passing</button>
+        <button class="black-button" onclick="sortClass()">Sort By Class</button>
+        <button class="black-button" onclick="sortGender()">Sort By Gender</button>
+    </div>
+
+    <!-- Table 1 - Displayed Always. In case of sortGender, displays all male students-->
+    <div id="db1">
+        <table id="table-1" width="100%">
+            <tr>
+                <th style="width: 5%">ID</th>
+                <th style="width: 40%">Name</th>
+                <th style="width: 10%">Gender</th>
+                <th style="width: 10%">Class</th>
+                <th style="width: 10%">Marks</th>
+                <th style="width: 10%">Passing</th>
+                <th style="width: 15%">Email</th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Table 2 - By default: not displayed. In case of sortGender, displays all female students -->
+    <div id="db2">
+        <table id="table-2" width="100%">
+            <tr>
+                <th style="width: 5%">ID</th>
+                <th style="width: 40%">Name</th>
+                <th style="width: 10%">Gender</th>
+                <th style="width: 10%">Class</th>
+                <th style="width: 10%">Marks</th>
+                <th style="width: 10%">Passing</th>
+                <th style="width: 15%">Email</th>
+            </tr>
+        </table>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

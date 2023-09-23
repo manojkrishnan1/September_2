@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+body{
+    background-color: #CDCDCD;
+}
+
+#portal{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#search{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#search input{
+    padding: 20px;
+    border: 2px solid black;
+    width: 85%;
+}
+
+#search button{
+    width: 15%;
+}
+
+.black-button{
+    padding:20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.black-button:hover{
+    cursor: pointer;
+    color: grey;
+}
+
+#container{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#container button{
+    width: calc(100%/6);
+}
+
+table, tr, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+#db1, #db2{
+    margin: 30px;
+}
+
+img{
+    width: 40px;
+    margin-right: 10px;
+}
